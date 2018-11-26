@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.wear.widget.BoxInsetLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="@color/dark_grey"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.NotesListActivity"
+        app:boxedEdges="all"
         tools:deviceIds="wear"
-        android:padding="@dimen/box_inset_layout_padding">
+        android:padding="@dimen/padding_medium">
 
     <ListView
             android:id="@+id/lvNotes"

@@ -34,7 +34,7 @@ class AddNoteActivity : Activity() {
 
         ibConfirm.setOnClickListener {
             val text = etNoteText.text.toString()
-            if (!text.isNullOrBlank() && text.length <= TEXT_MAX_LENGTH) {
+            if (text.length <= TEXT_MAX_LENGTH) {
                 SharedPreferenceHelper.saveNote(
                     Note(
                         System.currentTimeMillis().toString(),
